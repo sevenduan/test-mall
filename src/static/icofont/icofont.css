@@ -53,6 +53,26 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ec8e";
 }
 
+.icofont-card:before
+{
+  content: "\eed0";
+}
+
+.icofont-vehicle-delivery-van:before
+{
+  content: "\e9bd";
+}
+
+.icofont-package:before
+{
+  content: "\efb1";
+}
+
+.icofont-ui-rate-blank:before
+{
+  content: "\ec7a";
+}
+
 .icofont-xs
 {
   font-size: .5em;

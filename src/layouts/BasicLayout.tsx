@@ -1,14 +1,14 @@
 import BottomNav from '@/components/BottomNav';
 import React, { useEffect } from 'react';
-import { Location, connect, Dispatch } from 'umi';
-import { ConnectState } from '@/models/connect';
+import { connect } from 'umi';
+import { ConnectState, ConnectProps, UserModelState } from '@/models/connect';
 import '@/static/icofont/icofont.min.css';
 import styles from './BasicLayout.less';
 
-interface BasicLayoutProps {
-  location: Location;
-  dispatch: Dispatch;
-  user: any;
+interface BasicLayoutProps extends ConnectProps {
+  // location: Location;
+  // dispatch: Dispatch;
+  user: UserModelState;
 }
 
 const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
@@ -23,12 +23,11 @@ const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
   const { pathname } = location;
 
   console.log('props', props);
+  const showBottomNav = pathname !== '/login';
   return (
     <div className={styles.main}>
       <article>{children}</article>
-      <footer>
-        <BottomNav pathname={pathname} />
-      </footer>
+      <footer>{showBottomNav && <BottomNav pathname={pathname} />}</footer>
     </div>
   );
 };
