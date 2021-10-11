@@ -73,6 +73,11 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ec7a";
 }
 
+.icofont-ui-search:before
+{
+  content: "\ec82";
+}
+
 .icofont-xs
 {
   font-size: .5em;

@@ -11,9 +11,9 @@ export default {
   // Support Object and Array
   'GET /api/currentUser': {
     status: 1,
-    name: 'Shakespeare',
+    name: 'Seven Duan',
     icon: 'https://tva1.sinaimg.cn/large/00831rSTly1gdm7eok2oij301s01sgli.jpg',
-    userid: null, //'001',
+    userid: '001',
   },
   // GET POST
   'GET /api/users': [
@@ -41,7 +41,7 @@ export default {
     if (password === '123' && name === 'seven') {
       res.send({
         status: 1,
-        name: 'Shakespeare',
+        name: 'Seven Duan',
         icon: 'https://tva1.sinaimg.cn/large/00831rSTly1gdm7eok2oij301s01sgli.jpg',
         userid: '001',
       });
