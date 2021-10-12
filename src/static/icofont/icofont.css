@@ -33,11 +33,6 @@ url("./fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
-.icofont-cart:before
-{
-  content: "\eed2";
-}
-
 .icofont-home:before
 {
   content: "\ef47";
@@ -76,6 +71,11 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-ui-search:before
 {
   content: "\ec82";
+}
+
+.icofont-cart:before
+{
+  content: "\eed2";
 }
 
 .icofont-xs

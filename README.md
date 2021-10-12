@@ -16,3 +16,7 @@ Start the dev server,
 ```bash
 $ yarn start
 ```
+
+
+using umi command line to create new page
+umi g page product/[id] --typescript --less
