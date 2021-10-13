@@ -78,6 +78,11 @@ url("./fonts/icofont.woff") format("woff");
   content: "\eed2";
 }
 
+.icofont-google-map:before
+{
+  content: "\ed42";
+}
+
 .icofont-xs
 {
   font-size: .5em;
